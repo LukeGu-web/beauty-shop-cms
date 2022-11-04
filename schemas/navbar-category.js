@@ -6,28 +6,23 @@ export default {
     {
       name: 'name',
       type: 'string',
-      title: 'Name',
     },
     {
       name: 'link',
       type: 'url',
-      title: 'Link',
     },
     {
       name: 'items',
       type: 'array',
-      title: 'Items',
       validation: (Rule) => Rule.required().min(1).max(3),
       of: [
         {
-          title: 'Item',
           name: 'item',
           type: 'object',
           fields: [
             {
               name: 'name',
               type: 'string',
-              title: 'Name',
             },
             {
               name: 'isBlockItem',
@@ -43,7 +38,6 @@ export default {
                 {
                   name: 'title',
                   type: 'string',
-                  title: 'Title',
                 },
                 {
                   name: 'imageSrc',
@@ -53,7 +47,6 @@ export default {
                 {
                   name: 'link',
                   type: 'url',
-                  title: 'Link',
                 },
               ],
             },

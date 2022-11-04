@@ -5,6 +5,8 @@ import createSchema from 'part:@sanity/base/schema-creator';
 import schemaTypes from 'all:part:@sanity/base/schema-type';
 import navbar from './navbar';
 import navbarCategory from './navbar-category';
+import category from './category';
+import product from './product';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -14,6 +16,8 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
+    category,
+    product,
     navbar,
     navbarCategory,
   ]),

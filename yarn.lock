@@ -1227,7 +1227,7 @@
   resolved "https://registry.npmjs.org/@sanity/asset-utils/-/asset-utils-1.3.0.tgz#6460cd993a2c24368a6308028f3bc57df91f131e"
   integrity sha512-uyIOtGA4Duf+68I3BSbYHY5P+WGftn3QtNJD2Pn7h9WPGYsSrWViIPebE9yRN8N0NHhYj+hDQXaMpVdjG7r+zA==
 
-"@sanity/base@2.35.0", "@sanity/base@^2.35.0":
+"@sanity/base@2.35.0", "@sanity/base@>= 2.5.0", "@sanity/base@^2.35.0":
   version "2.35.0"
   resolved "https://registry.npmjs.org/@sanity/base/-/base-2.35.0.tgz#945a0d113d2cde159ba270e304385edb73e95a37"
   integrity sha512-gh66LiCYVyak6j7cncE+SJs4t9oKVzIOP79Ej8K08mDY5rQV6hZ5OS5esdBPYKLfb9eHr6oqBQejN0aHfEH59Q==
@@ -1858,7 +1858,7 @@
     "@sanity/client" "^3.3.3"
     "@types/react" "^17.0.42"
 
-"@sanity/ui@^0.37.22":
+"@sanity/ui@>= 0.33.9", "@sanity/ui@^0.37.22":
   version "0.37.22"
   resolved "https://registry.npmjs.org/@sanity/ui/-/ui-0.37.22.tgz#36bc54d689bc01f55103b01f6c8a571d6720df1a"
   integrity sha512-NoPfK92aXGW0miFpwYjN7ksZqO1HcXEvamPLzWWkmGjvEARr9B3Im+ooAKBkDuC9Bmufs4Jy++d5ITbPqDupJA==
@@ -1874,7 +1874,7 @@
     react-popper "^2.2.5"
     react-refractor "^2.1.7"
 
-"@sanity/util@2.35.0":
+"@sanity/util@2.35.0", "@sanity/util@>= 2.5.0":
   version "2.35.0"
   resolved "https://registry.npmjs.org/@sanity/util/-/util-2.35.0.tgz#9752638fca6611e6442efb7d7e00c4ece48aff03"
   integrity sha512-j9FyWRE1p97dkIJDuAg7lnSiLGPQVLa/qfnsVvaEr5iQK/3BSNh0AJ+RX4pfgl2JMmYaU961S/MESwPyOBEy2g==
@@ -9239,6 +9239,16 @@ sanity-diff-patch@^1.0.9:
   dependencies:
     diff-match-patch "^1.0.5"
 
+sanity-plugin-prefixed-slug@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/sanity-plugin-prefixed-slug/-/sanity-plugin-prefixed-slug-1.0.1.tgz#3c1cab9cf507912633e8fc3e9a33f5430edba06d"
+  integrity sha512-u3RdktLyJd5NoIaPd1IBqfH33a/W+s8WvpuQ4QlQQo5MHxnQTwBkeA2tM+PadWG0idAeq08BqqbaZrhIuTk0Fg==
+  dependencies:
+    "@sanity/base" ">= 2.5.0"
+    "@sanity/ui" ">= 0.33.9"
+    "@sanity/util" ">= 2.5.0"
+    speakingurl "^14.0.1"
+
 sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.npmjs.org/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
@@ -9587,6 +9597,11 @@ speakingurl@^13.0.0:
   version "13.0.0"
   resolved "https://registry.npmjs.org/speakingurl/-/speakingurl-13.0.0.tgz#266c52d2b47585375af058e4783c8d1097a2d3db"
   integrity sha512-bjwu8erR5rsfHW9ZKHReHJt9CEPrJCZopJ3rMVcCh8buJom+BI/7bHWYiHSZd+yS9rx4DGN+r5oKoVqDkiqfWw==
+
+speakingurl@^14.0.1:
+  version "14.0.1"
+  resolved "https://registry.yarnpkg.com/speakingurl/-/speakingurl-14.0.1.tgz#f37ec8ddc4ab98e9600c1c9ec324a8c48d772a53"
+  integrity sha512-1POYv7uv2gXoyGFpBCmpDVSNV74IfsWlDW216UPjbWufNf+bSU6GdbDsxdcxtfwb4xlI3yxzOTKClUosxARYrQ==
 
 speedometer@~1.0.0:
   version "1.0.0"
