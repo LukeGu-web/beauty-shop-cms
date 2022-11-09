@@ -7,13 +7,13 @@ export default {
       type: 'string',
     },
     {
-      name: 'categories',
+      name: 'sections',
       type: 'array',
       of: [
         {
-          name: 'category',
+          name: 'section',
           type: 'reference',
-          to: [{ type: 'navbarCategory' }],
+          to: [{ type: 'navbarSection' }],
         },
       ],
     },

@@ -1,15 +1,16 @@
 export default {
-  name: 'navbarCategory',
+  name: 'navbarSection',
   type: 'document',
-  title: 'Navbar category',
+  title: 'Navbar section',
   fields: [
     {
       name: 'name',
       type: 'string',
     },
     {
-      name: 'link',
-      type: 'url',
+      name: 'category',
+      type: 'reference',
+      to: [{ type: 'category' }],
     },
     {
       name: 'items',
@@ -36,17 +37,14 @@ export default {
               hidden: ({ parent }) => !parent.isBlockItem,
               fields: [
                 {
-                  name: 'title',
-                  type: 'string',
+                  name: 'product',
+                  type: 'reference',
+                  to: [{ type: 'product' }],
                 },
                 {
                   name: 'imageSrc',
                   type: 'image',
                   title: 'Image source',
-                },
-                {
-                  name: 'link',
-                  type: 'url',
                 },
               ],
             },
@@ -58,8 +56,8 @@ export default {
             },
             {
               name: 'listLink',
-              type: 'url',
-              title: 'List link',
+              type: 'reference',
+              to: [{ type: 'product' }],
               hidden: ({ parent }) => parent.isBlockItem,
             },
             {
@@ -74,14 +72,13 @@ export default {
                   title: 'List item',
                   fields: [
                     {
-                      name: 'title',
+                      name: 'name',
                       type: 'string',
-                      title: 'Title',
                     },
                     {
-                      name: 'link',
-                      type: 'url',
-                      title: 'Link',
+                      name: 'product',
+                      type: 'reference',
+                      to: [{ type: 'product' }],
                     },
                   ],
                 },

@@ -1,4 +1,5 @@
 export const slugGenerator = (input) =>
+  '/' +
   input
     .toLowerCase()
     .replace(/\s+/g, '-')
