@@ -31,7 +31,7 @@ export default {
       type: 'object',
       fields: [
         { name: 'title', type: 'string' },
-        { name: 'description', type: 'string' },
+        { name: 'description', type: 'text' },
         { name: 'leftButtonLabel', title: 'Left button label', type: 'string' },
         { name: 'leftButtonLink', title: 'Left button link', type: 'url' },
         {
@@ -44,6 +44,48 @@ export default {
           name: 'imageSrc',
           type: 'image',
           title: 'Image source',
+        },
+      ],
+    },
+    {
+      title: 'About section',
+      name: 'aboutSection',
+      type: 'object',
+      fields: [
+        { name: 'title', type: 'string' },
+        { name: 'description', type: 'text' },
+        { name: 'buttonLabel', title: 'Button label', type: 'string' },
+        { name: 'buttonLink', title: 'Button link', type: 'url' },
+        { name: 'videoSrc', title: 'Video source', type: 'url' },
+      ],
+    },
+    {
+      title: 'Benefit section',
+      name: 'benefitSection',
+      type: 'object',
+      fields: [
+        { name: 'title', type: 'string' },
+        {
+          name: 'items',
+          type: 'array',
+          of: [
+            {
+              name: 'item',
+              type: 'object',
+              fields: [
+                {
+                  name: 'name',
+                  type: 'string',
+                },
+                { name: 'description', type: 'text' },
+                {
+                  name: 'imageSrc',
+                  type: 'image',
+                  title: 'Image source',
+                },
+              ],
+            },
+          ],
         },
       ],
     },
